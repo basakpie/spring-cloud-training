@@ -1,0 +1,7 @@
+include 'proxy-server'
+include 'config-server'
+include 'discovery-server'
+include 'admin-server'
+include 'monitor-application'
+include 'biz1-application'
+include 'biz2-application'

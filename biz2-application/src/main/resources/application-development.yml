@@ -1,0 +1,20 @@
+server:
+  port: 9002
+
+management:
+  endpoints:
+    health:
+      enabled: true
+
+spring:
+  application:
+    name: biz2-application
+  cloud:
+    config:
+      discovery:
+        enabled: false
+
+eureka:
+  client:
+    registerWithEureka: false
+    fetchRegistry: false

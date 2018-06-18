@@ -1,0 +1,20 @@
+server:
+  port: 9001
+
+management:
+  endpoints:
+    health:
+      enabled: true
+
+spring:
+  application:
+    name: biz1-application
+  cloud:
+    config:
+      discovery:
+        enabled: false
+
+eureka:
+  client:
+    registerWithEureka: false
+    fetchRegistry: false

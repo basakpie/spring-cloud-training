@@ -1,0 +1,17 @@
+server:
+  port: 6001
+
+spring:
+  application:
+    name: admin-server
+  security:
+    user:
+      name: "username"
+      password: "password"
+  boot:
+    admin:
+      client:
+        instance:
+          metadata:
+            user.name: "username"
+            user.password: "password"

@@ -1,0 +1,19 @@
+server:
+  port: ${port:9001}
+
+spring:
+  application:
+    name: biz1-application
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        serviceId: config-server
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+    registryFetchIntervalSeconds: 1
+  instance:
+    leaseRenewalIntervalInSeconds: 1

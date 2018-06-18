@@ -1,0 +1,13 @@
+spring:
+  boot:
+    admin:
+      client:
+        url: http://localhost:6001
+        username: "username"
+        password: "password"
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
