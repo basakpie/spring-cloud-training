@@ -22,14 +22,14 @@ subprojects {
 
 	idea {
 		module {
-            		inheritOutputDirs = false
-            		jdkName = '1.8'
-            		downloadJavadoc = true
-            		downloadSources = true
-            		outputDir = file('build/classes/main')
-            		testOutputDir = file('build/classes/test')
-          	}
+			inheritOutputDirs = false
+			jdkName = '1.8'
+			downloadJavadoc = true
+			downloadSources = true
+			outputDir = file('build/classes/main')
+			testOutputDir = file('build/classes/test')
         }
+	}
 
 	dependencyManagement {
 		imports {
