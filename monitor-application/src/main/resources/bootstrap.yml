@@ -19,7 +19,7 @@ eureka:
     leaseRenewalIntervalInSeconds: 1
 
 turbine:
-  appConfig: biz1-application, biz2-application,, proxy-server
+  appConfig: biz1-application, biz2-application, proxy-server
   clusterNameExpression: "'default'"
 
 

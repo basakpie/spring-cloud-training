@@ -18,10 +18,10 @@ public class Biz2Controller {
     @GetMapping("/hystrix_test")
     @HystrixCommand(fallbackMethod = "hystrixTestFallback")
     public Mono<String> hystrixTest() throws IllegalAccessException {
-        throw new IllegalAccessException("hystrix tunbine tunbine exception");
+        throw new IllegalAccessException("Biz2 hystrix hystrix_test exception");
     }
 
     public Mono<String> hystrixTestFallback(){
-        return Mono.just("Hello hystrix_test Application! >> "+ LocalDateTime.now().toString());
+        return Mono.just("Hello Biz2 hystrix_test Application! >> "+ LocalDateTime.now().toString());
     }
 }
