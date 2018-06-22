@@ -17,3 +17,5 @@ eureka:
     registryFetchIntervalSeconds: 1
   instance:
     leaseRenewalIntervalInSeconds: 1
+
+hystrix.commanddefault.execution.isolation.thread.timeoutInMilliseconds: 10000

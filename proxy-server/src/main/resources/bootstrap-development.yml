@@ -18,6 +18,8 @@ zuul:
     biz1-application:
       path: /biz1/**
       serviceId: biz1-application
+      stripPrefix: true
     biz2-application:
       path: /biz2/**
       serviceId: biz2-application
+      stripPrefix: true
