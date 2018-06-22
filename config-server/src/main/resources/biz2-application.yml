@@ -6,8 +6,13 @@ spring:
         username: "username"
         password: "password"
 
-management:
-  endpoints:
-    web:
-      exposure:
-        include: "*"
+ribbon:
+  serverListRefreshInterval: 1000
+  ConnectTimeout: 6000
+  ReadTimeout: 3000
+
+hystrix.commanddefault.execution.isolation.thread.timeoutInMilliseconds: 10000
+
+feign.hystrix.enabled: true
+
+management.endpoints.web.exposure.include: "*"

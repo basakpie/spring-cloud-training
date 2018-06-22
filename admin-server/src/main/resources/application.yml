@@ -4,6 +4,10 @@ server:
 spring:
   application:
     name: admin-server
+  cloud:
+    config:
+      discovery:
+        enabled: false
   security:
     user:
       name: "username"
