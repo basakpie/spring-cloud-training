@@ -1,12 +1,9 @@
 server:
-  port: 8888
+  port: ${port:8888}
 
 spring:
   application:
     name: config-server
-  boot:
-    admin:
-      url: http://localhost:6001
   cloud:
     config:
       server:
@@ -17,7 +14,7 @@ spring:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://${eureka.instance.host:localhost}:${eureka.instance.port:8761}/eureka/
     registryFetchIntervalSeconds: 1
   instance:
     leaseRenewalIntervalInSeconds: 1

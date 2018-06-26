@@ -1,5 +1,5 @@
 server:
-  port: 6002
+  port: ${port:8661}
 
 spring:
   cloud:

@@ -3,8 +3,8 @@ spring:
     admin:
       client:
         url: http://localhost:6001
-        username: "username"
-        password: "password"
+        username: username
+        password: password
 
 ribbon:
   serverListRefreshInterval: 1000
